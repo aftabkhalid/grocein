@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aftabkhalid
 github_username:  aftabkhalid
+repository: aftabkhalid/grocein.github.io
 
 # Build settings
 markdown: kramdown
@@ -37,3 +38,5 @@ sass:
 include: ['_pages']
 kramdown:
   input: GFM
+
+gems: ['jekyll-github-metadata']
