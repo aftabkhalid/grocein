@@ -6,6 +6,12 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+.heading-lead-sm {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 600;
+}
+
 .site-header {
   position: relative;
   width: 100%;
@@ -59,31 +65,43 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-img {
-  width: 100%;
-}
-
 .data-frequency {
-  h6 {
-    text-transform: uppercase;
-    letter-spacing: .05em;
+  padding: 140px 0;
+  img {
+    width: 100%;
+  }
+  .col-lg-4 {
+    margin-bottom: 20px;
   }
 }
 
 .data-inverse {
   background-color: #263238;
+  padding: 140px 0;
+  color: #fff;
+}
+
+.jumbotron-img {
   background-image: url('/images/lift.jpg');
   background-size: cover;
   background-blend-mode: lighten;
   background-position: 0px -250px;
-  padding: 200px 0;
-  color: #fff;
 }
 
 .services {
+  text-align: center;
+  margin-bottom: 50px;
+
   img {
-    width: auto !important;
+    margin-bottom: 20px;
   }
+  p {
+    color: #6c6f73;
+  }
+}
+
+.fill-light-grey {
+  background-color: #F4F5F6;
 }
 
 .mt-10 { margin-top: 10px }
@@ -96,6 +114,17 @@ img {
 .mt-80 { margin-top: 80px }
 .mt-100 { margin-top: 100px }
 .mt-120 { margin-top: 120px }
+
+.mb-10 { margin-bottom: 10px }
+.mb-20 { margin-bottom: 20px }
+.mb-30 { margin-bottom: 30px }
+.mb-40 { margin-bottom: 40px }
+.mb-50 { margin-bottom: 50px }
+.mb-60 { margin-bottom: 60px }
+.mb-70 { margin-bottom: 70px }
+.mb-80 { margin-bottom: 80px }
+.mb-100 { margin-bottom: 100px }
+.mb-120 { margin-bottom: 120px }
 
 //
 // Navbars
@@ -139,11 +168,10 @@ img {
 }
 
 //
-// Grid system
+// Grid system (Custom grid)
 // --------------------------------------------------
 
 .container {
-
   @media (min-width: $screen-sm-min) {
     width: 740;
   }
