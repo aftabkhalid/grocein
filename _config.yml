@@ -44,6 +44,3 @@ kramdown:
 # Server Config options
 livereload: true     # You no longer need to include --livereload
 #reload_port: 5678    # If you don't want to use the default port
-
-# To add it on office laptop tomorrow
-#ssh-add ~/.ssh/github_rsa

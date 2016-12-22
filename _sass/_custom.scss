@@ -1,0 +1,180 @@
+// Bootstrap overrides
+// Theme styles
+
+//
+// General
+// --------------------------------------------------
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.heading-lead-sm {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 600;
+}
+
+.site-header {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  background-color: #000;
+  background-image: url('/images/header-bg.jpg');
+  height: 100vh;
+}
+
+.tt {
+  display: table;
+  height: 100vh;
+}
+
+.site-header-text {
+  vertical-align: middle;
+  display: table-cell;
+  h1 {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 21px;
+    font-weight: 300;
+  }
+}
+
+.btn-xlg {
+  padding: 12px 50px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #1565C0;
+}
+
+.v-align {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.cast-shadow {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.data-frequency {
+  padding: 120px 0;
+  img {
+    width: 100%;
+  }
+  .col-lg-4 {
+    margin-bottom: 20px;
+  }
+}
+
+.data-inverse {
+  background-color: #263238;
+  padding: 140px 0;
+  color: #fff;
+}
+
+.jumbotron-img {
+  background-image: url('/images/lift.jpg');
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-position: 0px -250px;
+}
+
+.services {
+  text-align: center;
+  margin-bottom: 50px;
+
+  img {
+    margin-bottom: 20px;
+  }
+  p {
+    color: #6c6f73;
+  }
+}
+
+.fill-light-grey {
+  background-color: #F4F5F6;
+}
+
+.site-footer {
+  padding: 100px 0;
+  a {
+    color: #777;
+  }
+}
+
+.mt-10 { margin-top: 10px }
+.mt-20 { margin-top: 20px }
+.mt-30 { margin-top: 30px }
+.mt-40 { margin-top: 40px }
+.mt-50 { margin-top: 50px }
+.mt-60 { margin-top: 60px }
+.mt-70 { margin-top: 70px }
+.mt-80 { margin-top: 80px }
+.mt-100 { margin-top: 100px }
+.mt-120 { margin-top: 120px }
+
+.mb-10 { margin-bottom: 10px }
+.mb-20 { margin-bottom: 20px }
+.mb-30 { margin-bottom: 30px }
+.mb-40 { margin-bottom: 40px }
+.mb-50 { margin-bottom: 50px }
+.mb-60 { margin-bottom: 60px }
+.mb-70 { margin-bottom: 70px }
+.mb-80 { margin-bottom: 80px }
+.mb-100 { margin-bottom: 100px }
+.mb-120 { margin-bottom: 120px }
+
+.rounded-all {
+  border-radius: 10rem;
+}
+
+//
+// Navbars
+// --------------------------------------------------
+
+.navbar-brand {
+  font-weight: 800;
+}
+
+.site-nav {
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.navbar-nav {
+  .nav-link {
+    + .nav-link {
+      margin-left: 1rem;
+    }
+  }
+
+  .nav-item + .nav-item {
+    margin-left: 2rem;
+  }
+}
+
+.navbar-fixed-top {
+  position: absolute;
+  top: 2.2rem;
+}
+
+//
+// Grid system (Custom grid)
+// Include media plugging into Bootstrap 4's Grid Breakpoints map
+// --------------------------------------------------
