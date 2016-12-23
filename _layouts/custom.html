@@ -5,9 +5,12 @@
 
 <body>
 
-	{% include header.html %}
-	{{ content }}
-	{% include footer.html %}
+	<div class="row-offcanvas row-offcanvas-right active">
+		{% include header.html %}
+		{{ content }}
+		{% include footer.html %}
+	</div>
+
 
 </body>
 

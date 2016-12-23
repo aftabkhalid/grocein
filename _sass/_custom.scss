@@ -5,6 +5,11 @@
 // General
 // --------------------------------------------------
 
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
 }
@@ -155,23 +160,70 @@ body {
   letter-spacing: .05em;
   text-transform: uppercase;
   font-size: 15px;
-}
-
-.navbar-nav {
-  .nav-link {
-    + .nav-link {
-      margin-left: 1rem;
-    }
-  }
 
   .nav-item + .nav-item {
     margin-left: 2rem;
   }
+
 }
 
 .navbar-fixed-top {
   position: absolute;
   top: 2.2rem;
+}
+
+@include media-breakpoint-down(md) {
+  .row-offcanvas {
+    position: relative;
+    transition: 375ms cubic-bezier(0.2, 0.7, 0.5, 1);
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -60%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -60%;
+  }
+
+  .row-offcanvas-right.active {
+    right: 60%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 60%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    background-color: $brand-inverse;
+    right: 0;
+  }
+
+  .site-nav {
+    height: 100%;
+    
+    .nav-item + .nav-item {
+      margin: 0;
+    }
+    .nav-item {
+      float: none;
+      padding: 0 2rem;
+    }
+  }
+
 }
 
 //

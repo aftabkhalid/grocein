@@ -1,10 +1,10 @@
 <header class="site-header">
   <nav class="navbar navbar-dark navbar-fixed-top">
     <div class="container">
-      <button class="navbar-toggler pull-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-      <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-        <a class="navbar-brand" href="{{ site.url | append: "/grocein" }}">{{ site.title }}</a>
-        <ul class="nav navbar-nav site-nav pull-right">
+      <a class="navbar-brand" href="{{ site.url | append: "/grocein" }}">{{ site.title }}</a>
+      <button class="navbar-toggler pull-right hidden-lg-up" type="button" data-toggle="offcanvas" aria-label="Toggle navigation"></button>
+      <div class="pull-right sidebar-offcanvas">
+        <ul class="nav navbar-nav site-nav">
           {% for link in site.data.links %}
           <li class="nav-item {% if page.title == link.title %} active {% endif %} ">
             <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}" title="{{ link.title }}">{{ link.title }}</a>
