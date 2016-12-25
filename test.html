@@ -3,36 +3,10 @@ layout: page
 title: Big Title, Not am i?
 ---
 
-<h2>
-
-  {% assign foo = "bar" %}
-  {{ foo }}
-
-</h2>
-
-<h1>
-
-  {% assign beatles = "John, Paul, George, Ringo" | split: ", " %}
-
-{% for member in beatles %}
-  {{ member }}
-{% endfor %}
-
-</h1>
-
-<h3>
-
-  {% assign var = 'a' %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-  {% increment var %}
-
-</h3>
+{% if customer.name == 'kevin' %}
+  Hey Kevin!
+{% elsif customer.name == 'anonymous' %}
+  Hey Anonymous!
+{% else %}
+  Hi Stranger!
+{% endif %}

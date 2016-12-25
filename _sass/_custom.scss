@@ -28,7 +28,18 @@ body {
   color: #fff;
   background-color: #000;
   background-image: url('/images/header-bg.jpg');
+  display: table;
+  padding: 155px 0 100px;
+  margin-bottom: 4rem;
+}
+
+.if-custom {
   height: 100vh;
+  margin-bottom: 0;
+}
+
+.sidebar-offcanvas {
+  float: right;
 }
 
 .tt {
@@ -172,7 +183,7 @@ body {
   top: 2.2rem;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .row-offcanvas {
     position: relative;
     transition: 375ms cubic-bezier(0.2, 0.7, 0.5, 1);
@@ -208,20 +219,32 @@ body {
     position: absolute;
     top: 0;
     width: 60%;
-    background-color: $brand-inverse;
+    background-color: #263238;
     right: 0;
+    height: 100%;
   }
 
   .site-nav {
-    height: 100%;
-    
+    margin-top: 2rem;
     .nav-item + .nav-item {
       margin: 0;
     }
     .nav-item {
       float: none;
       padding: 0 2rem;
+      font-weight: 300;
+      border-left: 4px solid transparent;
     }
+    .nav-item.active{
+      border-left: 4px solid $brand-primary;
+      font-weight: inherit;
+    }
+  }
+
+  .navbar-fixed-top {
+    padding-top: 2.2rem;
+    top: 0;
+    height: 100%;
   }
 
 }
@@ -230,3 +253,9 @@ body {
 // Grid system (Custom grid)
 // Include media plugging into Bootstrap 4's Grid Breakpoints map
 // --------------------------------------------------
+
+@include media-breakpoint-down(lg) {
+  .container {
+    width: 1020px;
+  }
+}
